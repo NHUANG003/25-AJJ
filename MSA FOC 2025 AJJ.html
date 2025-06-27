@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6eccc605c32fbe7605c13c4b1e07ff67 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6eccc605c32fbe7605c13c4b1e07ff67" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6eccc605c32fbe7605c13c4b1e07ff67 = L.map(
+                "map_6eccc605c32fbe7605c13c4b1e07ff67",
+                {
+                    center: [1.29027, 103.851959],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2086ee4e6f561724fcca2c48e1a47abe = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2086ee4e6f561724fcca2c48e1a47abe.addTo(map_6eccc605c32fbe7605c13c4b1e07ff67);
+        
+    
+            var marker_ac52d5c45e1ade9f6101a976a342e077 = L.marker(
+                [1.2992, 103.8554],
+                {
+}
+            ).addTo(map_6eccc605c32fbe7605c13c4b1e07ff67);
+        
+    
+            var icon_67712b37f006f2b6e354c2ca45b01f22 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_35372049a2ed7839d463ff609d833e36 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_17d1a9199a4d84c639439f81043bb310 = $(`<div id="html_17d1a9199a4d84c639439f81043bb310" style="width: 100.0%; height: 100.0%;">Bugis Street: Scavenger Hunt</div>`)[0];
+                popup_35372049a2ed7839d463ff609d833e36.setContent(html_17d1a9199a4d84c639439f81043bb310);
+            
+        
+
+        marker_ac52d5c45e1ade9f6101a976a342e077.bindPopup(popup_35372049a2ed7839d463ff609d833e36)
+        ;
+
+        
+    
+    
+            marker_ac52d5c45e1ade9f6101a976a342e077.bindTooltip(
+                `<div>
+                     Bugis Street
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ac52d5c45e1ade9f6101a976a342e077.setIcon(icon_67712b37f006f2b6e354c2ca45b01f22);
+            
+    
+            var marker_17369560f70840792f22ead057120537 = L.marker(
+                [1.3026, 103.8587],
+                {
+}
+            ).addTo(map_6eccc605c32fbe7605c13c4b1e07ff67);
+        
+    
+            var icon_a3e4e75116ec1519dc8049eaa414ec57 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1335edf31d48875d28d4bec01f873dde = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0151ec9674b61ad7a5fdc83b027f2901 = $(`<div id="html_0151ec9674b61ad7a5fdc83b027f2901" style="width: 100.0%; height: 100.0%;">Sultan Mosque: Quiz</div>`)[0];
+                popup_1335edf31d48875d28d4bec01f873dde.setContent(html_0151ec9674b61ad7a5fdc83b027f2901);
+            
+        
+
+        marker_17369560f70840792f22ead057120537.bindPopup(popup_1335edf31d48875d28d4bec01f873dde)
+        ;
+
+        
+    
+    
+            marker_17369560f70840792f22ead057120537.bindTooltip(
+                `<div>
+                     Sultan Mosque
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_17369560f70840792f22ead057120537.setIcon(icon_a3e4e75116ec1519dc8049eaa414ec57);
+            
+    
+            var marker_d6a76d2aed30ac87bd1ac16be094e7cc = L.marker(
+                [1.303, 103.859],
+                {
+}
+            ).addTo(map_6eccc605c32fbe7605c13c4b1e07ff67);
+        
+    
+            var icon_0818ded845ff8ce084815fbe24ff5716 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_824df7844ce858cf0e590b72e1bf5ed9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b0dd3216ec2fbcf01d7085778c9e60a = $(`<div id="html_1b0dd3216ec2fbcf01d7085778c9e60a" style="width: 100.0%; height: 100.0%;">Dessert: Pics / Vids</div>`)[0];
+                popup_824df7844ce858cf0e590b72e1bf5ed9.setContent(html_1b0dd3216ec2fbcf01d7085778c9e60a);
+            
+        
+
+        marker_d6a76d2aed30ac87bd1ac16be094e7cc.bindPopup(popup_824df7844ce858cf0e590b72e1bf5ed9)
+        ;
+
+        
+    
+    
+            marker_d6a76d2aed30ac87bd1ac16be094e7cc.bindTooltip(
+                `<div>
+                     Dessert
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d6a76d2aed30ac87bd1ac16be094e7cc.setIcon(icon_0818ded845ff8ce084815fbe24ff5716);
+            
+    
+            var marker_66f7f0bcc17a9a738552470f8c73d483 = L.marker(
+                [1.28, 103.8445],
+                {
+}
+            ).addTo(map_6eccc605c32fbe7605c13c4b1e07ff67);
+        
+    
+            var icon_4fd90929cea1dd29773fe03ac33f1c95 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_293df074945883aef6fa275746179b6e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eef66edb0aa4c9609c54ae2977e87396 = $(`<div id="html_eef66edb0aa4c9609c54ae2977e87396" style="width: 100.0%; height: 100.0%;">Buddha Tooth Relic Temple: Quiz</div>`)[0];
+                popup_293df074945883aef6fa275746179b6e.setContent(html_eef66edb0aa4c9609c54ae2977e87396);
+            
+        
+
+        marker_66f7f0bcc17a9a738552470f8c73d483.bindPopup(popup_293df074945883aef6fa275746179b6e)
+        ;
+
+        
+    
+    
+            marker_66f7f0bcc17a9a738552470f8c73d483.bindTooltip(
+                `<div>
+                     Buddha Tooth Relic Temple
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_66f7f0bcc17a9a738552470f8c73d483.setIcon(icon_4fd90929cea1dd29773fe03ac33f1c95);
+            
+    
+            var marker_4ea8e4ffd4910d62b0559d773f538969 = L.marker(
+                [1.281, 103.845],
+                {
+}
+            ).addTo(map_6eccc605c32fbe7605c13c4b1e07ff67);
+        
+    
+            var icon_677b06cf1aed74ea465fc9a5a38df61d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3a8d81882bd5dc1fd277efb9f65e4f63 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2df11575b7dcc9ff0ec08bd8a5d98359 = $(`<div id="html_2df11575b7dcc9ff0ec08bd8a5d98359" style="width: 100.0%; height: 100.0%;">Lunch: Pics / Vids</div>`)[0];
+                popup_3a8d81882bd5dc1fd277efb9f65e4f63.setContent(html_2df11575b7dcc9ff0ec08bd8a5d98359);
+            
+        
+
+        marker_4ea8e4ffd4910d62b0559d773f538969.bindPopup(popup_3a8d81882bd5dc1fd277efb9f65e4f63)
+        ;
+
+        
+    
+    
+            marker_4ea8e4ffd4910d62b0559d773f538969.bindTooltip(
+                `<div>
+                     Lunch
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4ea8e4ffd4910d62b0559d773f538969.setIcon(icon_677b06cf1aed74ea465fc9a5a38df61d);
+            
+    
+            var marker_6ef9b137a4632628682d320e523caafb = L.marker(
+                [1.2866, 103.8544],
+                {
+}
+            ).addTo(map_6eccc605c32fbe7605c13c4b1e07ff67);
+        
+    
+            var icon_3d7d7d960c843b5063734b61703c695d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4221cc1e9af7054cf12b868ff1d4cb3c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cd6c06054b9c5aeecb2459539e8d5429 = $(`<div id="html_cd6c06054b9c5aeecb2459539e8d5429" style="width: 100.0%; height: 100.0%;">Jubilee Bridge: Pics / Vids</div>`)[0];
+                popup_4221cc1e9af7054cf12b868ff1d4cb3c.setContent(html_cd6c06054b9c5aeecb2459539e8d5429);
+            
+        
+
+        marker_6ef9b137a4632628682d320e523caafb.bindPopup(popup_4221cc1e9af7054cf12b868ff1d4cb3c)
+        ;
+
+        
+    
+    
+            marker_6ef9b137a4632628682d320e523caafb.bindTooltip(
+                `<div>
+                     Jubilee Bridge
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6ef9b137a4632628682d320e523caafb.setIcon(icon_3d7d7d960c843b5063734b61703c695d);
+            
+    
+            var marker_fd43f772b8a50344e7448c835f03f63e = L.marker(
+                [1.3048, 103.8318],
+                {
+}
+            ).addTo(map_6eccc605c32fbe7605c13c4b1e07ff67);
+        
+    
+            var icon_76094e8e2cfb35d84955cb9db425bf71 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7ef27d42b906eb660a9ecd04b7ea4cbe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b19e041f2ff8f9d01af4688ee1af16c2 = $(`<div id="html_b19e041f2ff8f9d01af4688ee1af16c2" style="width: 100.0%; height: 100.0%;">Orchard: Quiz</div>`)[0];
+                popup_7ef27d42b906eb660a9ecd04b7ea4cbe.setContent(html_b19e041f2ff8f9d01af4688ee1af16c2);
+            
+        
+
+        marker_fd43f772b8a50344e7448c835f03f63e.bindPopup(popup_7ef27d42b906eb660a9ecd04b7ea4cbe)
+        ;
+
+        
+    
+    
+            marker_fd43f772b8a50344e7448c835f03f63e.bindTooltip(
+                `<div>
+                     Orchard
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fd43f772b8a50344e7448c835f03f63e.setIcon(icon_76094e8e2cfb35d84955cb9db425bf71);
+            
+    
+            var marker_feb83b658fa3e582cfca2bff901dc2c2 = L.marker(
+                [1.304, 103.8318],
+                {
+}
+            ).addTo(map_6eccc605c32fbe7605c13c4b1e07ff67);
+        
+    
+            var icon_bf91652138d5e32b2a7c67b3bd55c195 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0b1b1b9254da75a1ccaa9bad6ac52993 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e056ee24734254bb9a6aaf625f7a63c1 = $(`<div id="html_e056ee24734254bb9a6aaf625f7a63c1" style="width: 100.0%; height: 100.0%;">ION Orchard: Scavenger Hunt</div>`)[0];
+                popup_0b1b1b9254da75a1ccaa9bad6ac52993.setContent(html_e056ee24734254bb9a6aaf625f7a63c1);
+            
+        
+
+        marker_feb83b658fa3e582cfca2bff901dc2c2.bindPopup(popup_0b1b1b9254da75a1ccaa9bad6ac52993)
+        ;
+
+        
+    
+    
+            marker_feb83b658fa3e582cfca2bff901dc2c2.bindTooltip(
+                `<div>
+                     ION Orchard
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_feb83b658fa3e582cfca2bff901dc2c2.setIcon(icon_bf91652138d5e32b2a7c67b3bd55c195);
+            
+    
+            var marker_133a4e12e27cc50bf51e93659e396964 = L.marker(
+                [1.2868, 103.8545],
+                {
+}
+            ).addTo(map_6eccc605c32fbe7605c13c4b1e07ff67);
+        
+    
+            var icon_dc5a38405978bccfaf7e403f20aa2dcd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_729f03ee57f63e7fc959b589a83b0c16 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e5373be8481db9aebb9f10ed566eff30 = $(`<div id="html_e5373be8481db9aebb9f10ed566eff30" style="width: 100.0%; height: 100.0%;">Merlion: Pics / Vids</div>`)[0];
+                popup_729f03ee57f63e7fc959b589a83b0c16.setContent(html_e5373be8481db9aebb9f10ed566eff30);
+            
+        
+
+        marker_133a4e12e27cc50bf51e93659e396964.bindPopup(popup_729f03ee57f63e7fc959b589a83b0c16)
+        ;
+
+        
+    
+    
+            marker_133a4e12e27cc50bf51e93659e396964.bindTooltip(
+                `<div>
+                     Merlion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_133a4e12e27cc50bf51e93659e396964.setIcon(icon_dc5a38405978bccfaf7e403f20aa2dcd);
+            
+    
+            var marker_a37275495c28ca367bbc1189ce830268 = L.marker(
+                [1.2893, 103.8558],
+                {
+}
+            ).addTo(map_6eccc605c32fbe7605c13c4b1e07ff67);
+        
+    
+            var icon_b01b81bfcf9e656aa5b4298c0ce5afe1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_813269f7fc824b80267bbd69d5f395a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9cfe55f2394bface27909f9499c76577 = $(`<div id="html_9cfe55f2394bface27909f9499c76577" style="width: 100.0%; height: 100.0%;">Esplanade: Pics / Vids</div>`)[0];
+                popup_813269f7fc824b80267bbd69d5f395a5.setContent(html_9cfe55f2394bface27909f9499c76577);
+            
+        
+
+        marker_a37275495c28ca367bbc1189ce830268.bindPopup(popup_813269f7fc824b80267bbd69d5f395a5)
+        ;
+
+        
+    
+    
+            marker_a37275495c28ca367bbc1189ce830268.bindTooltip(
+                `<div>
+                     Esplanade
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a37275495c28ca367bbc1189ce830268.setIcon(icon_b01b81bfcf9e656aa5b4298c0ce5afe1);
+            
+    
+            var marker_93607058ef47a42caaef19236eb64d52 = L.marker(
+                [1.2885, 103.852],
+                {
+}
+            ).addTo(map_6eccc605c32fbe7605c13c4b1e07ff67);
+        
+    
+            var icon_8a2d6c6cc81733dd164dc6432bd8b296 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d0ba1e351fece853c356fbcc0842b611 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f9067bfc1b89c6880d3d8f576d69e587 = $(`<div id="html_f9067bfc1b89c6880d3d8f576d69e587" style="width: 100.0%; height: 100.0%;">Raffles Garden: Pics / Vids</div>`)[0];
+                popup_d0ba1e351fece853c356fbcc0842b611.setContent(html_f9067bfc1b89c6880d3d8f576d69e587);
+            
+        
+
+        marker_93607058ef47a42caaef19236eb64d52.bindPopup(popup_d0ba1e351fece853c356fbcc0842b611)
+        ;
+
+        
+    
+    
+            marker_93607058ef47a42caaef19236eb64d52.bindTooltip(
+                `<div>
+                     Raffles Garden
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_93607058ef47a42caaef19236eb64d52.setIcon(icon_8a2d6c6cc81733dd164dc6432bd8b296);
+            
+    
+            var marker_3ff2494681139be00d689c9428d78f58 = L.marker(
+                [1.3064, 103.8495],
+                {
+}
+            ).addTo(map_6eccc605c32fbe7605c13c4b1e07ff67);
+        
+    
+            var icon_b1a47ec242e20c23686fcae064322363 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d9f75e6a6926dab1f3e45789d177459 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ae90a0fa4528c29cb879372e9018cae = $(`<div id="html_3ae90a0fa4528c29cb879372e9018cae" style="width: 100.0%; height: 100.0%;">Little India: Scavenger Hunt</div>`)[0];
+                popup_8d9f75e6a6926dab1f3e45789d177459.setContent(html_3ae90a0fa4528c29cb879372e9018cae);
+            
+        
+
+        marker_3ff2494681139be00d689c9428d78f58.bindPopup(popup_8d9f75e6a6926dab1f3e45789d177459)
+        ;
+
+        
+    
+    
+            marker_3ff2494681139be00d689c9428d78f58.bindTooltip(
+                `<div>
+                     Little India
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3ff2494681139be00d689c9428d78f58.setIcon(icon_b1a47ec242e20c23686fcae064322363);
+            
+    
+            var marker_8f6df4a96409b0d34c9c5d1eae01cf49 = L.marker(
+                [1.2871, 103.8497],
+                {
+}
+            ).addTo(map_6eccc605c32fbe7605c13c4b1e07ff67);
+        
+    
+            var icon_a7f34e9f5fadb80d10fddbd12642cb42 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8dbd278462a2f9790a965efae154c85f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0050103251ce60359448fb80df4cc50c = $(`<div id="html_0050103251ce60359448fb80df4cc50c" style="width: 100.0%; height: 100.0%;">Funan: Scavenger Hunt</div>`)[0];
+                popup_8dbd278462a2f9790a965efae154c85f.setContent(html_0050103251ce60359448fb80df4cc50c);
+            
+        
+
+        marker_8f6df4a96409b0d34c9c5d1eae01cf49.bindPopup(popup_8dbd278462a2f9790a965efae154c85f)
+        ;
+
+        
+    
+    
+            marker_8f6df4a96409b0d34c9c5d1eae01cf49.bindTooltip(
+                `<div>
+                     Funan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8f6df4a96409b0d34c9c5d1eae01cf49.setIcon(icon_a7f34e9f5fadb80d10fddbd12642cb42);
+            
+    
+            var marker_d299632b77bf8b10f8ca9cb7e43f2091 = L.marker(
+                [1.2896, 103.8465],
+                {
+}
+            ).addTo(map_6eccc605c32fbe7605c13c4b1e07ff67);
+        
+    
+            var icon_80405df4582b7760d0c066c5299f504d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_633c0190afadbc228d3249c55adeaef8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5a5674e03b1469eadd3ad4a3a84028b0 = $(`<div id="html_5a5674e03b1469eadd3ad4a3a84028b0" style="width: 100.0%; height: 100.0%;">Old Hill Street Police Station: Spot the Differences</div>`)[0];
+                popup_633c0190afadbc228d3249c55adeaef8.setContent(html_5a5674e03b1469eadd3ad4a3a84028b0);
+            
+        
+
+        marker_d299632b77bf8b10f8ca9cb7e43f2091.bindPopup(popup_633c0190afadbc228d3249c55adeaef8)
+        ;
+
+        
+    
+    
+            marker_d299632b77bf8b10f8ca9cb7e43f2091.bindTooltip(
+                `<div>
+                     Old Hill Street Police Station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d299632b77bf8b10f8ca9cb7e43f2091.setIcon(icon_80405df4582b7760d0c066c5299f504d);
+            
+    
+            var marker_abe18c3f89528abf03c8afbf68b5b2cb = L.marker(
+                [1.2842, 103.8436],
+                {
+}
+            ).addTo(map_6eccc605c32fbe7605c13c4b1e07ff67);
+        
+    
+            var icon_d3985feb528919365432cac6c7fd8081 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3cbcbcf00176b2023ccb0ebf8e82c57f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5a5ae7247bac7f0c924a0df5cf4d67ab = $(`<div id="html_5a5ae7247bac7f0c924a0df5cf4d67ab" style="width: 100.0%; height: 100.0%;">Chinatown: Spot the Differences</div>`)[0];
+                popup_3cbcbcf00176b2023ccb0ebf8e82c57f.setContent(html_5a5ae7247bac7f0c924a0df5cf4d67ab);
+            
+        
+
+        marker_abe18c3f89528abf03c8afbf68b5b2cb.bindPopup(popup_3cbcbcf00176b2023ccb0ebf8e82c57f)
+        ;
+
+        
+    
+    
+            marker_abe18c3f89528abf03c8afbf68b5b2cb.bindTooltip(
+                `<div>
+                     Chinatown
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_abe18c3f89528abf03c8afbf68b5b2cb.setIcon(icon_d3985feb528919365432cac6c7fd8081);
+            
+    
+            var marker_00154a9a36e1090fbc94fd4a454004ff = L.marker(
+                [1.2845, 103.8439],
+                {
+}
+            ).addTo(map_6eccc605c32fbe7605c13c4b1e07ff67);
+        
+    
+            var icon_6fe13e889c0d0ecc25a4374f583df3e1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_112a86ce9d4370c5aca32586867af744 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_659db876ce4ca9adcfc6fe582e03b0fe = $(`<div id="html_659db876ce4ca9adcfc6fe582e03b0fe" style="width: 100.0%; height: 100.0%;">Bruce Lee Mural: Pics / Vids</div>`)[0];
+                popup_112a86ce9d4370c5aca32586867af744.setContent(html_659db876ce4ca9adcfc6fe582e03b0fe);
+            
+        
+
+        marker_00154a9a36e1090fbc94fd4a454004ff.bindPopup(popup_112a86ce9d4370c5aca32586867af744)
+        ;
+
+        
+    
+    
+            marker_00154a9a36e1090fbc94fd4a454004ff.bindTooltip(
+                `<div>
+                     Bruce Lee Mural
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_00154a9a36e1090fbc94fd4a454004ff.setIcon(icon_6fe13e889c0d0ecc25a4374f583df3e1);
+            
+</script>
+</html>
